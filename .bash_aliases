@@ -25,16 +25,11 @@ alias sla='sa && la'
 alias grc='git rebase --continue'
 alias gc='git checkout'
 alias gs='git status'
-alias gg='git log --graph --pretty=format:"Commit Hash: %H, Author: %aN, Date: %aD" -n 50'
+alias gg_old='git log --graph --pretty=format:"Commit Hash: %H, Author: %aN, Date: %aD" -n 50'
+alias gg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-
-#wms
-alias mt='cp -R /Users/fabienlamarque/projects/wms-arrg/srv/src/main/resources/re/arrg/* /Users/fabienlamarque/projects/wms-arrg/srv/target/classes/re/arrg/'
-alias cdp='cd ~/projects/wms-arrg/'
-alias cdpi='cd ~/projects/wms-arrg/ui/'
-alias mrg='mongo localhost:27017/wms /Users/fabienlamarque/projects/wms-arrg/tools/db/init/4_3_init_goodTypes.js'
-
-
+#kube
+alias k='kubectl'
 
 #npm
 alias nin='rm -rf /Users/fabienlamarque/projects/wms-arrg/ui/node_modules/* && npm install && npm start'
